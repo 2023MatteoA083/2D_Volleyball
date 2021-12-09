@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<style>
+h2 {
+    background-color: palegreen;
+  font-family: verdana;
+  font-size: 250%;
+ align-content: center;
+    border-width: thick;
+    border-color: pink;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+    border-radius: 8px;
+}
+p {
+  color: darkgreen;
+  font-family: verdana;
+  font-size: 100%;
+    position: fixed;
+    bottom: 10px;
+    background-color: #ffe6fc;
+    padding: 4px;
+    border-radius: 8px;
+}
+iframe{
+      z-index:1;
+    height: 75vh;
+    width: 90vw;
+      min-width: 400px;
+    min-height: 224px;
+    position: fixed;
+    margin-left: 40px;
+    margin-right: auto;
+    }
+    
+.dark-mode {
+  background-color: black;
+}
+    
+.button {
+  color: #ffe6fc;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    position: static;
+    float: right;
+}
+
+.button1 {
+  background-color: white;
+  color: black; 
+  border: 2px solid #4CAF50;
+    border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+<button onclick="myFunction()" class="button button1">Dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+<h2>2D Volleyball</h2>
+    
+<iframe src="https://2023matteoa083.github.io/StarterGame/"  ></iframe>
+    
+<p><b>How to play:</b> Pink player uses WASD controls, Green player uses arrow keys.<br><b>Goal:</b> Try to make the ball hit the other player's side.</p>
+    
+</body>
+</html>
+
